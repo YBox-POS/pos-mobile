@@ -1,7 +1,5 @@
 # POS系统 移动端 React Native 
 
-This starter kit is designed to get you up and running with a complete React Native project as fast as possible.
-
 ## Table of Contents
 1. [特点](#features)
 1. [环境需求](#requirements)
@@ -50,8 +48,8 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 ```
 .
-├── .expo                    # Project and build configurations
-├── flow-typed               # Dependencies types for flow
+├── .expo                    
+├── flow-typed               
 ├── node_modules             # 所有依赖
 ├── src                      # 应用程序源码
 │   ├── components           # 所有应用程序的组件
