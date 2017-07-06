@@ -1,6 +1,6 @@
-# POS系统 移动端 React Native 
+# POS系统 移动端 React Native 说明
 
-## Table of Contents
+## 目录
 1. [特点](#features)
 1. [环境需求](#requirements)
 1. [目录结构](#application-structure)
@@ -22,7 +22,7 @@
 * yarn `^0.22.0` or npm `^3.0.0`
 
 
-### Install from source
+### 安装
 
 克隆该项目，建议您使用 [Yarn](https://yarnpkg.com/) 来安装依赖, 当然也可以使用 `npm install` ，但不推荐。
 
@@ -44,7 +44,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 |`test`|在监视模式下使用 Jest 运行单元测试。|
 |`eject`|若不用Expo，该命令可自定义所有依赖|
 
-## Application Structure
+## 应用程序结构
 
 ```
 .
@@ -81,7 +81,13 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 └── yarn.lock                # Yarn 配置文件
 ```
 
-## Storybook
+## 关于 Styled Components 
+
+- [官方网站](https://www.styled-components.com/)
+- [[译] 一个关于 Styled Components 的五分钟介绍](https://github.com/sqrthree/sqrthree.github.io/issues/11)
+- [Styled Components：让样式也成为组件](http://www.alloyteam.com/2017/05/guide-styled-components/)
+
+## 关于 Storybook
 
 React Storybook 在构建UI时非常酷。 
 
