@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'https://m.jandou.com/file/script/'
+  baseURL: 'http://www.mocky.io/v2/'
 })
 
 export const getRequest = (url) => (

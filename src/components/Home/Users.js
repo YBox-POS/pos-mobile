@@ -7,18 +7,20 @@ import { List, ListItem } from 'react-native-elements'
 const Users = ({ users, followUser, unfollowUser }) => (
   <ScrollView
     style={{
-      flex: 1
+      flex: 1,
+
     }}
     contentContainerStyle={{ flex: 1 }}
   >
+    <Text style={{fontSize:26,marginTop:20}}>标题</Text>
     {Object.values(users).map(({ id, name, following }) => (
       <ListItem
         title={name}
         key={`user-${id}`}
         rightIcon={
           <Button
-            color={"tomato"}
-            onPress={() => following ? unfollowUser(id) : followUser(id)}
+            color={"green"}
+            onPress={() => {following ? unfollowUser(id) : followUser(id);alert(following ? '已取消关注' : '已关注')}}
             title={following ? '取消关注' : '关注'}
           /> 
         }
