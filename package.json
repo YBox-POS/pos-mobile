@@ -1,8 +1,8 @@
 {
-  "name": "react-native-starter-kit",
+  "name": "pos-mobile",
   "version": "0.1.0",
-  "description": "React Native starter kit, get up and running !",
-  "author": "Jean-Claude Pratt-Delzenne <prattjames4@gmail.com> http://http://prattdelzenne.com",
+  "description": "POS系统移动端 React Native",
+  "author": "YBox-POS",
   "license": "MIT",
   "devDependencies": {
     "@kadira/react-native-storybook": "^2.0.0",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@expo/vector-icons": "^4.0.0",
     "axios": "^0.16.1",
-    "expo": "^16.0.0",
+    "expo": "^17.0.0",
     "react": "16.0.0-alpha.6",
     "react-native": "^0.43.4",
     "react-native-elements": "^0.12.1",
