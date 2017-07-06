@@ -3,6 +3,7 @@ import * as mainModel from '../reducks/main.model'
 import * as homeModel from '../../Home/reducks/home.model'
 import { getUsers } from '../../../services/user.api'
 
+// 初始化APP
 function* initApp() {
   try {
     const res = yield call(getUsers)
@@ -12,6 +13,7 @@ function* initApp() {
       return ({
         id: user.id,
         name: user.name,
+        username: user.username,
         following: false
       })
     })

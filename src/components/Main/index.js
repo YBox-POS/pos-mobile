@@ -8,6 +8,7 @@ class Main extends Component {
     initApplication()
   }
 
+/* 启动加载界面 */
   render() {
     if (!this.props.initialized) {
       return <AppLoading />
