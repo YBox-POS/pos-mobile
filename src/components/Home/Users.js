@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, ScrollView, Image, View, StyleSheet, Dimensions } from 'react-native';
 import styled from 'styled-components/native';
-import { List, ListItem, Button} from 'react-native-elements'
+import { List, ListItem, Button} from 'react-native-elements';
 
 const {SCREEN_WIDTH, SCREEN_HEIGHT} = Dimensions.get('window');
 const Users = ({ users, followUser, unfollowUser }) => (
@@ -50,14 +50,7 @@ const Users = ({ users, followUser, unfollowUser }) => (
 
 const styles = StyleSheet.create({
   images: {
-<<<<<<< HEAD
-    width:SCREEN_WIDTH,
-    height:280
-  }
-});
 
-export default Users;
-=======
     width: SCREEN_WIDTH,
     height: 150
   }
@@ -65,4 +58,3 @@ export default Users;
 
 
 export default Users;
->>>>>>> 9c4506f31a36ab66f61522c3e0c299b18dea0447
