@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, ScrollView, Image, View, StyleSheet } from 'react-native';
+import { Text, ScrollView, Image, View, StyleSheet ,Dimensions} from 'react-native';
 import styled from 'styled-components/native';
 import { List, ListItem, Button} from 'react-native-elements'
 
+const SCREEN_WIDTH = Dimensions.get('window').width;
 const Users = ({ users, followUser, unfollowUser }) => (
   <ScrollView
     style={{
@@ -33,10 +34,9 @@ const Users = ({ users, followUser, unfollowUser }) => (
 
 const styles = StyleSheet.create({
   images: {
-    width:375,
+    width:SCREEN_WIDTH,
     height:280
   }
 });
-
 
 export default Users;

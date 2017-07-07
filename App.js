@@ -1,10 +1,9 @@
 //*********** COMMENT THE CODE BELOW TO USE STORYBOOK *************/
 import React, { Component } from 'react'
-import { NativeRouter } from 'react-router-native';
 import { Provider } from 'react-redux'
 
 // all routes
-import Routes from './src/routes'
+import MainRoot from './src/routes/index'
 
 // store redux
 import store from './src/store'
@@ -16,9 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <NativeRouter>
-          <Routes />
-        </NativeRouter>
+          <MainRoot />
       </Provider>
     );
   }
