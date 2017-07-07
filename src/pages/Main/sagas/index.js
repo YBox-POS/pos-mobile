@@ -3,10 +3,13 @@ import * as mainModel from '../reducks/main.model'
 import * as homeModel from '../../Home/reducks/home.model'
 import { getUsers } from '../../../services/user.api'
 
+
+
 // 初始化APP
 function* initApp() {
   try {
     const res = yield call(getUsers)
+    //类似 call(fn, ...args)，但支持为 fn 指定 this 上下文。用于调用对象的方法。
     const users = res.data
 
     const newUsers = users.map(user => {
@@ -14,7 +17,7 @@ function* initApp() {
         id: user.id,
         name: user.name,
         username: user.username,
-        following: false
+        following: false,
       })
     })
   
