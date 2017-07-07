@@ -1,4 +1,3 @@
-
 export const initialState = {
   users: {}
 };
@@ -10,3 +9,6 @@ export const FOLLOW_USER = 'FOLLOW_USER'
 
 export const UNFOLLOW_USER_REQUEST = 'UNFOLLOW_USER_REQUEST'
 export const UNFOLLOW_USER = 'UNFOLLOW_USER'
+
+export const DELETE_USER_REQUEST = 'DELETE_USER_REQUEST'
+export const DELETE_USER = 'DELETE_USER'

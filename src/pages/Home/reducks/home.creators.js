@@ -11,3 +11,10 @@ export const unfollowUser = userId => {
     payload: { userId }
   })
 }
+
+export const deleteUser = userId => {
+  return ({
+    type: homeModel.DELETE_USER_REQUEST,
+    payload: { userId }
+  })
+}

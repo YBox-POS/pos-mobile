@@ -26,6 +26,16 @@ export default (state = homeModel.initialState, action) => {
           }
         }
       }
+    case homeModel.DELETE_USER:
+      return {
+        users: {
+          ...state.users,
+          [action.payload.userId]: {
+            ...state.users[action.payload.userId],
+            delete2: true
+          }
+        }
+      }
     default:
       return state;
   }

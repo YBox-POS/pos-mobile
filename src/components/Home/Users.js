@@ -1,23 +1,32 @@
 import React from 'react';
-import { Text, ScrollView, Image, View, StyleSheet ,Dimensions} from 'react-native';
+import { Text, ScrollView, Image, View, StyleSheet, Dimensions } from 'react-native';
 import styled from 'styled-components/native';
 import { List, ListItem, Button} from 'react-native-elements'
 
-const SCREEN_WIDTH = Dimensions.get('window').width;
+const {SCREEN_WIDTH, SCREEN_HEIGHT} = Dimensions.get('window');
 const Users = ({ users, followUser, unfollowUser }) => (
   <ScrollView
     style={{
       flex: 1,
     }}
-    contentContainerStyle={{ flex: 1 }}
+    contentContainerStyle={{ marginBottom:100 }}
   >
-    <Image style={styles.images} source={require('./a.gif')} />
-    {Object.values(users).map(({ id, name, username, following, }) => (
+    <Image style={styles.images} source={require('./a.gif')}  />
+    {Object.values(users).map(({ id, name, username, following }) => (
       <ListItem
         title={name}
-        avatar={{uri: 'https://cdn.dribbble.com/users/674925/avatars/normal/653922b8b5b75fca5ae33dd45115ff07.jpeg?1470820037'}}
+        avatar={{uri: 'https://m.jandou.com/file/images/avatar.jpg'}}
         key={`user-${id}`}
         onPress={() => {console.log('你点击的是列表'+id)}}
+        leftIcon={
+          <Button
+            color={"#fff"}
+            iconRight
+            buttonStyle={{backgroundColor: '#00D9C7', borderRadius: 5}}
+            onPress={() => {}}
+            title={"删除"}
+          /> 
+        }
         rightIcon={
           <Button
             color={"#fff"}
@@ -29,14 +38,31 @@ const Users = ({ users, followUser, unfollowUser }) => (
         }
       />
     ))}
+    <Button
+      color={"#fff"}
+      iconRight
+      buttonStyle={{backgroundColor: '#FF557C', borderRadius: 5, marginTop:20}}
+      onPress={() => {alert("屏幕宽度："+SCREEN_WIDTH+"\n屏幕高度："+SCREEN_HEIGHT)}}
+      title={"获取屏幕宽度"}
+    /> 
   </ScrollView>
 )
 
 const styles = StyleSheet.create({
   images: {
+<<<<<<< HEAD
     width:SCREEN_WIDTH,
     height:280
   }
 });
 
 export default Users;
+=======
+    width: SCREEN_WIDTH,
+    height: 150
+  }
+});
+
+
+export default Users;
+>>>>>>> 9c4506f31a36ab66f61522c3e0c299b18dea0447
