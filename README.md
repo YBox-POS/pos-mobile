@@ -68,7 +68,7 @@ $ yarn start            # 编译和发布 (类似于 `npm start`)
 │   ├── routes               # 应用程序路由(X)
 │   ├── services             # 应用程序接口(API)
 │   ├── store                # 存储和中间件
-│   └── styles               # 书写样式的插件
+│   └── styles               # 书写样式的插件
 ├── tests                    # 测试工具
 ├── .babelrc                 # Babel 配置文件
 ├── .flowconfig              # Flow 配置文件
