@@ -32,9 +32,7 @@ $ flow-typed install    # 安装类型的依赖关系,如果你想使用 flow
 $ yarn start            # 编译和发布 (类似于 `npm start`)
 ```
 
-While developing, you will probably rely mostly on `npm start`; however, there are additional scripts at your disposal:
-
-在开发过程中，主要依靠`npm start`来完成，但还有其他脚本可供使用，如下：
+在开发过程中，主要依靠`npm start`来完成，但还有其他脚本可供使用，参考说明：
 
 |`npm run <script>`|Description|
 |------------------|-----------|
@@ -42,7 +40,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 |`ios`|使用iOS模拟器启动应用程序(限 Mac OS)|
 |`android`|使用 android 模拟器启动应用程序 (需要依赖 android studio)|
 |`test`|在监视模式下使用 Jest 运行单元测试。|
-|`eject`|若不用Expo，该命令可自定义所有依赖|
+|`eject`|若不用Expo，该命令可自定义所有依赖，谨慎使用！！|
 
 ## 应用程序结构
 
@@ -53,20 +51,22 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 ├── node_modules             # 所有依赖
 ├── src                      # 应用程序源码
 │   ├── components           # 所有应用程序的组件
-│   ├── pages                # 应用程序页面
+│   ├── modules              # 应用程序模块
 │   │   ├── Home             # 首页
-│   │   │   ├── containers   # 页面的容器
-│   │   │   ├── reducks      # 与 Redux 相关 (Model, Creators, Reducers)
-│   │   │   ├── routes       # 路由相关
-│   │   │   ├── sagas        # sagas
-│   │   │   └── selectors    # 预留文件夹
+│   │   │   ├── components   # 私有组件
+│   │   │   ├── containers   # 页面的容器(?)
+│   │   │   ├── duck.js      # 与 Redux 相关 (Model, Creators, Reducers)
+│   │   │   ├── routes       # Navigation 主要容器
+│   │   │   ├── saga.js      # sagas 相关
+│   │   │   └── selectors.js # 性能上优化(?)
 │   │   ├── Main             # 第二个页面
-│   │   │   ├── containers   
-│   │   │   ├── reducks      
-│   │   │   ├── sagas       
-│   │   │   └── selectors    
-│   ├── routes               # 应用程序路由
-│   ├── services             # 应用程序接口  API
+│   │   │   ├── components   # 私有组件
+│   │   │   ├── containers   # 页面的容器(?)
+│   │   │   ├── duck.js      
+│   │   │   ├── saga.js        
+│   │   │   └── selectors.js    
+│   ├── routes               # 应用程序路由(X)
+│   ├── services             # 应用程序接口(API)
 │   ├── store                # 存储和中间件
 │   └── styles               # 书写样式的插件
 ├── tests                    # 测试工具
@@ -76,7 +76,7 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 ├── App.js                   # 应用程序入口
 ├── app.json                 # Expo 配置文件
 ├── package.json             # 应用程序依赖配置
-├── README.md                # 说明
+├── README.md                # 项目说明文档
 └── yarn.lock                # Yarn 配置文件
 ```
 
@@ -135,3 +135,4 @@ after that, run `npm start` or any other command(ios|android) to run your projec
 That's it, you have ***Storybook*** in a React Native app with Expo, all need to do now is create your **stories** ;-)
 
 MIT License# pos-mobile
+Author: zhuziyi (Github)https://github.com/zhuziyi1989[]
