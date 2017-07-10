@@ -1,17 +1,3 @@
-// import React, { Component } from 'react'
-
-// // components
-// import Screens from '../components/commons/Screen'
-
-// // route components
-// import MainRoot from '../pages/Home/routes/index'
-
-// export default () => (
-//   <Screens>
-//     <MainRoot />
-//   </Screens>
-// )
-
 import {View, Image, Dimensions,Text} from 'react-native';
 import React from 'react';
 import { DrawerNavigator, DrawerItems } from 'react-navigation';

@@ -1,3 +1,4 @@
+//actions
 import * as homeModel from './home.model'
 
 export const followUser = userId => ({

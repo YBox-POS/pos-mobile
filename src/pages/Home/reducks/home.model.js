@@ -1,3 +1,4 @@
+// actions type
 export const initialState = {
   users: {}
 };
