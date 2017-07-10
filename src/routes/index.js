@@ -4,7 +4,7 @@ import { DrawerNavigator, DrawerItems } from 'react-navigation';
 import { Icon ,Avatar} from 'react-native-elements';
 
 
-import Home from '../pages/Home/routes/index';
+import Home from '../modules/Home/routes/index';
 // import Navtest from './draws/drawtest';
 // import Draw2 from './draws/drawtest2';
 // import Draw3 from './draws/drawtest3';

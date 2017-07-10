@@ -53,7 +53,6 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 ├── node_modules             # 所有依赖
 ├── src                      # 应用程序源码
 │   ├── components           # 所有应用程序的组件
-│   ├── helpers              # 应用程序工具助手
 │   ├── pages                # 应用程序页面
 │   │   ├── Home             # 首页
 │   │   │   ├── containers   # 页面的容器

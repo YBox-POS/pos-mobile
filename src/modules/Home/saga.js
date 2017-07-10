@@ -1,6 +1,6 @@
 import { call, put, takeLatest, fork, all } from 'redux-saga/effects'
-import * as homeModel from '../reducks/home.model'
-import { getUsers } from '../../../services/user.api'
+import * as homeModel from './duck'
+import { getUsers } from '../../services/user.api'
 
 function* homeSaga(action) {
   if (action.type === homeModel.FOLLOW_USER_REQUEST) {

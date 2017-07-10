@@ -1,7 +1,7 @@
 import { call, put, takeLatest, fork, all } from 'redux-saga/effects'
-import * as mainModel from '../reducks/main.model'
-import * as homeModel from '../../Home/reducks/home.model'
-import { getUsers } from '../../../services/user.api'
+import * as homeModel from '../Home/duck'
+import * as mainModel from './duck'
+import { getUsers } from '../../services/user.api'
 
 
 
@@ -28,6 +28,7 @@ function* initApp() {
 
     yield put({
       type: mainModel.APP_INITIALIZED
+      // type: "APP_INITIALIZED"
     })
   } catch(e) {
     console.error(e)

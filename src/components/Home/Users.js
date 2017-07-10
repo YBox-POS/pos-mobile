@@ -3,7 +3,10 @@ import { Text, ScrollView, Image, View, StyleSheet, Dimensions } from 'react-nat
 import styled from 'styled-components/native';
 import { List, ListItem, Button} from 'react-native-elements';
 
-const {SCREEN_WIDTH, SCREEN_HEIGHT} = Dimensions.get('window');
+//获取屏幕宽高
+const SCREEN_WIDTH = Dimensions.get('window').width;
+const SCREEN_HEIGHT = Dimensions.get('window').height;
+
 const Users = ({ users, followUser, unfollowUser }) => (
   <ScrollView
     style={{
@@ -50,7 +53,6 @@ const Users = ({ users, followUser, unfollowUser }) => (
 
 const styles = StyleSheet.create({
   images: {
-
     width: SCREEN_WIDTH,
     height: 150
   }
