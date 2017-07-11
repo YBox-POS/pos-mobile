@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components/native'
 
-import Screen from '../../components/commons/Screen'
+import Screen from '../../../components/commons/Screen'
 
 import Users from './Users'
 

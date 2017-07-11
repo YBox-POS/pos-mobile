@@ -1,6 +1,6 @@
 import { call, put, takeLatest, fork, all } from 'redux-saga/effects'
-import * as homeModel from '../Home/duck'
-import * as mainModel from './duck'
+import * as homeType from '../Home/duck'
+import * as mainType from './duck'
 import { getUsers } from '../../services/user.api'
 
 
@@ -22,18 +22,17 @@ function* initApp() {
     })
   
     yield put({
-      type: homeModel.GET_USERS,
+      type: homeType.GET_USERS,
       payload: newUsers
     })
 
     yield put({
-      type: mainModel.APP_INITIALIZED
-      // type: "APP_INITIALIZED"
+      type: mainType.APP_INITIALIZED
     })
   } catch(e) {
     console.error(e)
     yield put({
-      type: homeModel.GET_USERS,
+      type: homeType.GET_USERS,
       payload: []
     })
   }
@@ -41,6 +40,6 @@ function* initApp() {
 
 export default function* rootMainSaga() {
   yield all([
-    takeLatest(mainModel.INIT_APPLICATION, initApp)
+    takeLatest(mainType.INIT_APPLICATION, initApp)
   ])
 }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 
 // all routes
-import MainRoot from './src/routes/index'
+import MainRoot from './src/navigation/index'
 
 // store redux
 import store from './src/store'

@@ -14,7 +14,7 @@ const Users = ({ users, followUser, unfollowUser }) => (
     }}
     contentContainerStyle={{ marginBottom:100 }}
   >
-    <Image style={styles.images} source={require('./a.gif')}  />
+    <Image style={styles.images} source={require('../../../asset/img/a.gif')}  />
     {Object.values(users).map(({ id, name, username, following }) => (
       <ListItem
         title={name}

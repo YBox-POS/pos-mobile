@@ -50,25 +50,29 @@ $ yarn start            # 编译和发布 (类似于 `npm start`)
 ├── flow-typed               
 ├── node_modules             # 所有依赖
 ├── src                      # 应用程序源码
+│   ├── asset                # 静态资源
 │   ├── components           # 所有应用程序的组件
+│   ├── config               # 相关配置(?)
 │   ├── modules              # 应用程序模块
 │   │   ├── Home             # 首页
 │   │   │   ├── components   # 私有组件
 │   │   │   ├── containers   # 页面的容器(?)
 │   │   │   ├── duck.js      # 与 Redux 相关 (Model, Creators, Reducers)
-│   │   │   ├── routes       # Navigation 主要容器
+│   │   │   ├── homeContainer# mapStateToProps And mapDispatchToProps 合并
+│   │   │   ├── index.js     # 模块主文件(?)
 │   │   │   ├── saga.js      # sagas 相关
 │   │   │   └── selectors.js # 性能上优化(?)
 │   │   ├── Main             # 第二个页面
 │   │   │   ├── components   # 私有组件
 │   │   │   ├── containers   # 页面的容器(?)
-│   │   │   ├── duck.js      
-│   │   │   ├── saga.js        
-│   │   │   └── selectors.js    
-│   ├── routes               # 应用程序路由(X)
+│   │   │   ├── ...         
+│   ├── navigation           # 应用程序导航
+│   │   ├── product          # 商品模块
+│   │   ├── notice           # 公告信息
+│   │   ├── outlet           # 门店模块
+│   │   ├── staff            # 人员模块
 │   ├── services             # 应用程序接口(API)
 │   ├── store                # 存储和中间件
-│   └── styles               # 书写样式的插件
 ├── tests                    # 测试工具
 ├── .babelrc                 # Babel 配置文件
 ├── .flowconfig              # Flow 配置文件

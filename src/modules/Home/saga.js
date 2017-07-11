@@ -1,30 +1,30 @@
 import { call, put, takeLatest, fork, all } from 'redux-saga/effects'
-import * as homeModel from './duck'
+import * as homeType from './duck'
 import { getUsers } from '../../services/user.api'
 
 function* homeSaga(action) {
-  if (action.type === homeModel.FOLLOW_USER_REQUEST) {
+  if (action.type === homeType.FOLLOW_USER_REQUEST) {
     yield put({
       ...action,
-      type: homeModel.FOLLOW_USER
+      type: homeType.FOLLOW_USER
     })
-  } else if (action.type === homeModel.UNFOLLOW_USER_REQUEST) {
+  } else if (action.type === homeType.UNFOLLOW_USER_REQUEST) {
     yield put({
       ...action,
-      type: homeModel.UNFOLLOW_USER
+      type: homeType.UNFOLLOW_USER
     })
-  }else if (action.type === homeModel.DELETE_USER_REQUEST) {
+  }else if (action.type === homeType.DELETE_USER_REQUEST) {
     yield put({
       ...action,
-      type: homeModel.DELETE_USER
+      type: homeType.DELETE_USER
     })
   }
 }
 
 export default function* rootHomeSaga() {
   yield all([
-    takeLatest(homeModel.FOLLOW_USER_REQUEST, homeSaga),
-    takeLatest(homeModel.UNFOLLOW_USER_REQUEST, homeSaga),
-    takeLatest(homeModel.DELETE_USER_REQUEST, homeSaga)
+    takeLatest(homeType.FOLLOW_USER_REQUEST, homeSaga),
+    takeLatest(homeType.UNFOLLOW_USER_REQUEST, homeSaga),
+    takeLatest(homeType.DELETE_USER_REQUEST, homeSaga)
   ])
 }
