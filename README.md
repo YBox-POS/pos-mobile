@@ -139,4 +139,6 @@ after that, run `npm start` or any other command(ios|android) to run your projec
 That's it, you have ***Storybook*** in a React Native app with Expo, all need to do now is create your **stories** ;-)
 
 MIT License# pos-mobile
-Author: zhuziyi (Github)https://github.com/zhuziyi1989[]
+Author: 
+- zhuziyi (Github)https://github.com/zhuziyi1989[] 
+- songyifan
