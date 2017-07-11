@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'http://www.mocky.io/v2/'
+  timeout: 6000,
+  baseURL: 'http://rapapi.org/mockjsdata/22191/'
 })
 
 export const getRequest = (url) => (
@@ -12,4 +13,5 @@ export const postRequest = (url, data) => (
   instance.post(url, data)
 )
 
-export const getUsers = () => getRequest('595d9bce100000a8007c1749')
+export const getUsers = () => getRequest('users.api')
+

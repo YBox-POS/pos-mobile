@@ -10,8 +10,8 @@ function* initApp() {
   try {
     const res = yield call(getUsers)
     //类似 call(fn, ...args)，但支持为 fn 指定 this 上下文。用于调用对象的方法。
-    const users = res.data
-
+    const users = res.data.data
+    console.log(users);
     const newUsers = users.map(user => {
       return ({
         id: user.id,
