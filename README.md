@@ -1,4 +1,4 @@
-# POS系统 移动端 React Native 说明
+# Pos-Mobile React Native Documentation
 
 ## 目录
 1. [特点](#features)
@@ -11,6 +11,7 @@
 * [redux](https://github.com/rackt/redux)
 * [redux-saga](https://github.com/redux-saga/redux-saga)
 * [expo](https://github.com/expo/expo)
+* [axios](https://github.com/mzabriskie/axios)
 * [react-native-elements](https://react-native-training.github.io/react-native-elements/)
 * [styled-components](https://github.com/styled-components/styled-components)
 * [react-router-native](https://github.com/rackt/react-router)
@@ -18,7 +19,7 @@
 * [Storybook](https://storybooks.js.org/)
 
 ## 环境需求
-* node `^4.5.0`
+* node `^4.5.0` (建议 6.7.0) 
 * yarn `^0.22.0` or npm `^3.0.0`
 
 
@@ -51,7 +52,7 @@ $ yarn start            # 编译和发布 (类似于 `npm start`)
 ├── node_modules             # 所有依赖
 ├── src                      # 应用程序源码
 │   ├── asset                # 静态资源
-│   ├── components           # 所有应用程序的组件
+│   ├── components           # 公共组件库
 │   ├── config               # 相关配置(?)
 │   ├── modules              # 应用程序模块
 │   │   ├── Home             # 首页
@@ -138,7 +139,8 @@ after that, run `npm start` or any other command(ios|android) to run your projec
 
 That's it, you have ***Storybook*** in a React Native app with Expo, all need to do now is create your **stories** ;-)
 
-MIT License# pos-mobile
+MIT License# Pos-Mobile
+
 Author: 
-- zhuziyi (Github)https://github.com/zhuziyi1989[] 
-- songyifan
+- zhuziyi (Github)[https://github.com/zhuziyi1989] 
+- songyifan (Github)[https://github.com/ltyx55mlb]
