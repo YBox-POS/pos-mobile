@@ -1,15 +1,14 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-native'
 
 import Screens from '../../components/commons/Screen'
 
 import Main from '../../modules/Main/mainContainer'
-import Home from '../../modules/Home/homeContainer'
+import ImageHome from '../../modules/Imagelist/ImageContainer'
 
 export default () => (
     <Screens>
           <Main>
-            <Home />
+            <ImageHome />
           </Main>
     </Screens>
 )
