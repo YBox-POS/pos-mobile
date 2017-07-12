@@ -14,7 +14,7 @@ const ExImages = ({ imagesa, followImage, unfollowImage }) => (
     <Text>{console.log("|||||||||||||||||."+ Object.prototype.toString.call(imagesa).slice(8,-1))}</Text>  
      {/* <Text>{console.log("//////////"+imagesa)}</Text>  */}
     {/* {Object.values(imagesa).map(({ id, path, price, name,desc }) => (  */}
-        <GridView
+        {/* <GridView
         itemWidth={120}
         items={imagesa}
         style={styles.gridView}
@@ -25,9 +25,9 @@ const ExImages = ({ imagesa, followImage, unfollowImage }) => (
             <Text style={styles.itemCode}>{item.desc}</Text>
           </View>
         )}
-      />      
+      />       */}
        {/* ))}     */}
-     {/* {Object.values(imagesa).map(({ id, path, price, name,desc }) => (
+      {Object.values(imagesa).map(({ id, path, price, name,desc }) => (
       <ListItem
         title={name}
         avatar={{uri:path}}
@@ -41,7 +41,7 @@ const ExImages = ({ imagesa, followImage, unfollowImage }) => (
           /> 
         }
       />
-    ))}  */}
+    ))}  
   </ScrollView>
 )
 
