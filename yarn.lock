@@ -9,9 +9,9 @@
     has-color "^0.1.7"
     strip-ansi "^0.2.1"
 
-"@expo/vector-icons@^4.0.0":
-  version "4.1.1"
-  resolved "http://registry.npm.taobao.org/@expo/vector-icons/download/@expo/vector-icons-4.1.1.tgz#d9da106cde232254cccfc816f4f86cad2d6f1269"
+"@expo/vector-icons@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-5.0.0.tgz#380d578a58b736b693acdd1aa86f8b6576465ba4"
   dependencies:
     react-native-vector-icons "4.1.1"
 
@@ -259,7 +259,7 @@ ansi-regex@^0.2.0, ansi-regex@^0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-0.2.1.tgz#0d8e946967a3d8143f93e24e298525fc1b2235f9"
 
-ansi-regex@^2.0.0:
+ansi-regex@^2.0.0, ansi-regex@^2.1.1:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
 
@@ -319,9 +319,9 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-argsarray@0.0.1:
+argsarray@^0.0.1:
   version "0.0.1"
-  resolved "http://registry.npm.taobao.org/argsarray/download/argsarray-0.0.1.tgz#6e7207b4ecdb39b0af88303fa5ae22bda8df61cb"
+  resolved "https://registry.yarnpkg.com/argsarray/-/argsarray-0.0.1.tgz#6e7207b4ecdb39b0af88303fa5ae22bda8df61cb"
 
 arr-diff@^2.0.0:
   version "2.0.0"
@@ -1203,9 +1203,9 @@ babel-preset-es2016@^6.11.3:
   dependencies:
     babel-plugin-transform-exponentiation-operator "^6.24.1"
 
-babel-preset-expo@1.0.1:
-  version "1.0.1"
-  resolved "http://registry.npm.taobao.org/babel-preset-expo/download/babel-preset-expo-1.0.1.tgz#94d82bb33abf35bddb1a6878eb901bbf4c54a48c"
+babel-preset-expo@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-2.0.0.tgz#8a34d34fe5b621c8a152bc9fc06567ff270d314b"
   dependencies:
     babel-plugin-module-resolver "2.5.0"
     babel-plugin-transform-decorators-legacy "1.3.4"
@@ -2603,23 +2603,26 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
-expo@^16.0.0:
-  version "16.0.0"
-  resolved "http://registry.npm.taobao.org/expo/download/expo-16.0.0.tgz#859c5f9f9b91451f0c9989de40561ee026ea165e"
+expo@^18.0.0:
+  version "18.0.9"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-18.0.9.tgz#5653a930c79ae5b268e3811b990b1aced21ba42d"
   dependencies:
-    "@expo/vector-icons" "^4.0.0"
+    "@expo/vector-icons" "^5.0.0"
     babel-preset-airbnb "^2.2.3"
-    babel-preset-expo "1.0.1"
+    babel-preset-expo "^2.0.0"
     fbemitter "^2.1.1"
     lodash.map "^4.6.0"
     lodash.zipobject "^4.1.3"
     lottie-react-native "1.1.1"
     md5-file "^3.1.1"
+    pretty-format "^20.0.3"
+    prop-types "^15.5.10"
+    react-native-branch "2.0.0-beta.3"
     react-native-fbads "https://github.com/callstack-io/react-native-fbads/tarball/v4.1.0"
-    react-native-maps "https://github.com/expo/react-native-maps/archive/v0.12.2-exp.1.tar.gz"
-    react-native-svg "https://github.com/expo/react-native-svg/archive/4.4.1.tar.gz"
+    react-native-maps "https://github.com/expo/react-native-maps/archive/v0.15.2.tar.gz"
+    react-native-svg "https://github.com/expo/react-native-svg/archive/5.2.0-exp.0.tar.gz"
     uuid-js "^0.7.5"
-    websql "^0.4.4"
+    websql expo/node-websql#18.0.0
 
 express-session@~1.11.3:
   version "1.11.3"
@@ -4601,7 +4604,7 @@ mz@^2.3.1, mz@^2.6.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.3.0, nan@^2.3.3, nan@~2.4.0:
+nan@^2.3.0, nan@^2.3.3:
   version "2.4.0"
   resolved "http://registry.npm.taobao.org/nan/download/nan-2.4.0.tgz#fb3c59d45fe4effe215f0b890f8adf6eb32d2232"
 
@@ -4677,7 +4680,7 @@ node-notifier@^5.0.1:
     shellwords "^0.1.0"
     which "^1.2.12"
 
-node-pre-gyp@^0.6.36, node-pre-gyp@~0.6.31:
+node-pre-gyp@^0.6.36:
   version "0.6.36"
   resolved "http://registry.npm.taobao.org/node-pre-gyp/download/node-pre-gyp-0.6.36.tgz#db604112cb74e0d477554e9b505b17abddfab786"
   dependencies:
@@ -5341,6 +5344,13 @@ pretty-format@^19.0.0:
   dependencies:
     ansi-styles "^3.0.0"
 
+pretty-format@^20.0.3:
+  version "20.0.3"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-20.0.3.tgz#020e350a560a1fe1a98dc3beb6ccffb386de8b14"
+  dependencies:
+    ansi-regex "^2.1.1"
+    ansi-styles "^3.0.0"
+
 private@^0.1.6:
   version "0.1.7"
   resolved "http://registry.npm.taobao.org/private/download/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"
@@ -5567,6 +5577,10 @@ react-modal@^1.2.1:
     prop-types "^15.5.7"
     react-dom-factories "^1.0.0"
 
+react-native-branch@2.0.0-beta.3:
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.0.0-beta.3.tgz#2167af86bbc9f964bd45bd5f37684e5b54965e32"
+
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/react-native-dismiss-keyboard/download/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"
@@ -5599,9 +5613,9 @@ react-native-elements@^0.12.1:
   dependencies:
     eventemitter3 "^2.0.2"
 
-"react-native-maps@https://github.com/expo/react-native-maps/archive/v0.12.2-exp.1.tar.gz":
-  version "0.12.2"
-  resolved "https://github.com/expo/react-native-maps/archive/v0.12.2-exp.1.tar.gz#1984bfe5a8a341dd3b44ad565cfcd1b25a5c2b03"
+"react-native-maps@https://github.com/expo/react-native-maps/archive/v0.15.2.tar.gz":
+  version "0.15.2"
+  resolved "https://github.com/expo/react-native-maps/archive/v0.15.2.tar.gz#e6a022511fbb53d0db5029dc0b159dd194a3763f"
 
 react-native-safe-module@^1.1.0:
   version "1.2.0"
@@ -5634,12 +5648,12 @@ react-native-super-grid@^1.0.3:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/react-native-super-grid/download/react-native-super-grid-1.0.3.tgz#83f4c7b3a6d2bcdc1689b51b678438de94eeba22"
 
-"react-native-svg@https://github.com/expo/react-native-svg/archive/4.4.1.tar.gz":
-  version "4.4.1"
-  resolved "https://github.com/expo/react-native-svg/archive/4.4.1.tar.gz#fb1719b0d15fabc1b5c3aca8a94b1629409c1d67"
+"react-native-svg@https://github.com/expo/react-native-svg/archive/5.2.0-exp.0.tar.gz":
+  version "5.2.0"
+  resolved "https://github.com/expo/react-native-svg/archive/5.2.0-exp.0.tar.gz#8bcf93483cda9a1c96d42c48fcdfbd2b999f4996"
   dependencies:
     color "^0.11.1"
-    lodash "^4.0.0"
+    lodash "^4.16.6"
 
 react-native-swipeout@^2.1.1:
   version "2.1.3"
@@ -6490,13 +6504,6 @@ sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "http://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
-sqlite3@^3.1.1:
-  version "3.1.8"
-  resolved "http://registry.npm.taobao.org/sqlite3/download/sqlite3-3.1.8.tgz#4cbcf965d8b901d1b1015cbc7fc415aae157dfaa"
-  dependencies:
-    nan "~2.4.0"
-    node-pre-gyp "~0.6.31"
-
 sshpk@^1.7.0:
   version "1.13.1"
   resolved "http://registry.npm.taobao.org/sshpk/download/sshpk-1.13.1.tgz#512df6da6287144316dc4c18fe1cf1d940739be3"
@@ -7167,15 +7174,14 @@ webpack@^1.13.2:
     watchpack "^0.2.1"
     webpack-core "~0.6.9"
 
-websql@^0.4.4:
+"websql@github:expo/node-websql#18.0.0":
   version "0.4.4"
-  resolved "http://registry.npm.taobao.org/websql/download/websql-0.4.4.tgz#1463177f203cff0f3ac4d8294c8e1261c0c8ec01"
+  resolved "https://codeload.github.com/expo/node-websql/tar.gz/e364fa65146a9e2157a19e5c719e7702c2b6b87a"
   dependencies:
-    argsarray "0.0.1"
+    argsarray "^0.0.1"
     immediate "^3.2.2"
     noop-fn "^1.0.0"
     pouchdb-collections "^1.0.1"
-    sqlite3 "^3.1.1"
     tiny-queue "^0.2.1"
 
 whatwg-encoding@^1.0.1:
