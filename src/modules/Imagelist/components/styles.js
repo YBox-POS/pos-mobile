@@ -65,6 +65,18 @@ var styles = StyleSheet.create({
     fontSize: 12,
     color: '#fff',
   },
+  imagesize:{
+    width: 120, 
+    height: 100
+  },
+  texttop:{
+    width: 100, 
+    height: 100
+  },
+  textbottom:{
+    width: 100, 
+    height: 100
+  },
 })
 
 module.exports = styles

@@ -9,9 +9,6 @@ class ImageHome extends Component {
   render() {
     const { imagesa, followImage, unfollowImage } = this.props
    const wwwe = (Object.values(imagesa))
-  //  console.log("//////////"+Object.prototype.toString.call(wwwe).slice(8,-1))
-    
-  //  var arr = Object.keys(imagesa).map(key=> imagesa[key]);
 
    return (
       <Screen>
