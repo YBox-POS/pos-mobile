@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  timeout: 6000,
   baseURL: 'http://rapapi.org/mockjsdata/22191/'
 })
 
@@ -14,4 +13,4 @@ export const postRequest = (url, data) => (
 )
 
 export const getUsers = () => getRequest('users.api')
-
+export const getImages = () => getRequest('images.api')
