@@ -5681,14 +5681,6 @@ react-native-vector-icons@4.1.1:
     prop-types "^15.5.8"
     yargs "^6.3.0"
 
-react-native-vector-icons@^4.2.0:
-  version "4.2.0"
-  resolved "http://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-4.2.0.tgz#0594b68debdd758dce4c565bf02e2d64d7004d82"
-  dependencies:
-    lodash "^4.0.0"
-    prop-types "^15.5.8"
-    yargs "^6.3.0"
-
 react-native@^0.43.4:
   version "0.43.4"
   resolved "http://registry.npm.taobao.org/react-native/download/react-native-0.43.4.tgz#92fb6937ab415b2e5612835a93a61845de98eb4d"
@@ -7174,7 +7166,7 @@ webpack@^1.13.2:
     watchpack "^0.2.1"
     webpack-core "~0.6.9"
 
-"websql@github:expo/node-websql#18.0.0":
+websql@expo/node-websql#18.0.0:
   version "0.4.4"
   resolved "https://codeload.github.com/expo/node-websql/tar.gz/e364fa65146a9e2157a19e5c719e7702c2b6b87a"
   dependencies:

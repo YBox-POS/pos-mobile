@@ -14,7 +14,7 @@ class Home extends Component {
           users={users}
           followUser={followUser}
           unfollowUser={unfollowUser}
-        />
+        /> 
       </Screen>
     )
   }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import {ScrollView} from 'react-native'
+import {ScrollView} from 'react-native';
 
 import Screen from '../../../components/commons/Screen'
-import ExImages from './Images'
-import SearchImages from './Imgsearch'
+import ExImages from './Users'
 
 class ImageHome extends Component {
   render() {
@@ -13,7 +12,6 @@ class ImageHome extends Component {
     return (
       <ScrollView style={{flex: 1,}}>
             <Screen>
-              <SearchImages />
               <ExImages
                 imagesa={wwwe}
                 followImage={followImage}

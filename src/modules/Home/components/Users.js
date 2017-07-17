@@ -15,6 +15,7 @@ const Users = ({ users, followUser, unfollowUser }) => (
     contentContainerStyle={{ marginBottom:100 }}
   >
     <Image style={styles.images} source={require('../../../asset/img/a.gif')}  />
+    
     {Object.values(users).map(({ id, name, username, following }) => (
       <ListItem
         title={name}
@@ -48,6 +49,7 @@ const Users = ({ users, followUser, unfollowUser }) => (
       onPress={() => {alert("屏幕宽度："+SCREEN_WIDTH+"\n屏幕高度："+SCREEN_HEIGHT)}}
       title={"获取屏幕宽度"}
     /> 
+
   </ScrollView>
 )
 
